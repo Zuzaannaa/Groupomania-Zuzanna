@@ -12,7 +12,7 @@
         <div class="description">
           <div>
             <h4>{{ post.User.firstname }} {{ post.User.lastname }}</h4>
-            <p>Created at: le {{ post.createdAt }}</p>
+            <p>Created at: {{ post.createdAt }}</p>
           </div>
           <div v-if="auth(post.userId)" class="optionsBtn">
             <button @click="modifyPost(post.id)">
